@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Teachable Machine - Validação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Teachable Machine - Validação</h2>
+    <div id="pergunta">Vamos começar? (Digite 'sim' para iniciar)</div>
+    <input type="text" id="resposta" placeholder="Digite aqui">
+    <button id="confirmar">Confirmar</button>
+
+    <div id="camera" style="display: none;">
+        <p>Modelo de Pose Ativado</p>
+        <canvas id="canvas"></canvas>
+        <div id="label-container"></div>
+        <div id="mensagem"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
